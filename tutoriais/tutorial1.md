@@ -15,10 +15,12 @@ Ac2CdGe (225)
 8c	Ac	1/4	3/4	3/4  
 
 Indo ao site Bilbao Crystallographic Server / WYCKPOS / numero (225) para conseguir as posicoes equivalentes:  
+```txt
 (0,0,0) + (0,1/2,1/2) + (1/2,0,1/2) + (1/2,1/2,0) +  
 4	a	m-3m   (0,0,0)  
 4	b	m-3m   (1/2,1/2,1/2) #1/2 +0 = 1/2, 1/2 +1/2 = 1 (volta pra 0), 1/2+1/2 = 1 (volta pra 0) imagine uma celula cubica simples, 0,0,0 e 1,0,0 sao equivalentes  
 8	c	-43m     (1/4,1/4,1/4)	(1/4,1/4,3/4) aqui temos que usar tambem,  (0,1/2,1/2)+(1/4,1/4,1/4) == 1/4	3/4	3/4  
+```
 
 
 em alat (a-lattice) The lattice parameter "alat" is set to alat = celldm(1)  
