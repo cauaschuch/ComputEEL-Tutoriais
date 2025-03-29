@@ -164,8 +164,33 @@ celldm(6) = 0.0150
       v1 = (a, 0, 0),
       v2 = (b*cos(gamma), b*sin(gamma), 0)
       v3 = (c*cos(beta),  c*(cos(alpha)-cos(beta)cos(gamma))/sin(gamma),
-           c*sqrt( 1 + 2*cos(alpha)cos(beta)cos(gamma)
+           c*sqrt( 1 + 2*cos(alpha)cos(beta)cos(gamma)  
                      - cos(alpha)^2-cos(beta)^2-cos(gamma)^2 )/sin(gamma) )
       where alpha is the angle between axis b and c
              beta is the angle between axis a and c
             gamma is the angle between axis a and b
+```python
+import numpy as np  
+import numpy.linalg as la  
+
+alat = np.genfromtxt('Ac2CdGe_alat')  
+
+out = open('Ac2CdGe_crystal', 'w')  
+b = .5 * np.array([[-1, 0, 1], [0, 1, 1], [-1, 1, 0]])  # ibrav 2  
+M = b.T  
+print(M)  
+Minv = la.inv(M)  
+
+crystal = np.zeros([len(alat), 3])  
+
+for i in range(len(alat)):  
+    crystal[i] = (Minv @ alat[i]) % 1  
+    out.write(f'{crystal[i, 0]:11.8f} {crystal[i, 1]:11.8f} {crystal[i, 2]:11.8f}\n')  
+
+out.close()  
+
+```
+
+
+
+
