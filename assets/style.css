@@ -1,0 +1,48 @@
+/* assets/style.css */
+
+body {
+  background-color: #111;
+  color: #33ff33;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 2rem;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, nav {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: #33ff33;
+}
+
+code {
+  background: #222;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #00ffcc;
+}
+
+pre {
+  background: #222;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #eee;
+}
+
+h1, h2, h3 {
+  color: #00ff99;
+}
