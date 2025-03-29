@@ -1,6 +1,7 @@
 ---
+title: "Tutorial 1"
 layout: default
-title: Tutorial 1 - Hello World
+permalink: /tutoriais/tutorial1/
 ---
 
 # Tutorial 1 - Hello World
