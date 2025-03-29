@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sumário
+title: Início
 ---
 
 # Bem-vindo!
