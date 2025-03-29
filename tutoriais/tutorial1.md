@@ -7,7 +7,7 @@ permalink: /tutoriais/tutorial1/
 # Como estruturar as coordenadas atômicas e a célula do seu composto
 
 
-OBS: Existem 230 grupos espaciais: point group+translational simmetry  
+OBS: Existem 230 grupos espaciais: point group+translational simmetry  $\pi$
 #A  
 Ac2CdGe (225)  
 4a	Ge	0	0	0  
