@@ -7,5 +7,5 @@ title: Início
 
 Explore os tutoriais:
 
-- [Tutorial 1](/tutoriais/tutorial1)
-- [Tutorial 2](/tutoriais/tutorial2)
+- [Arquivo de entrada](/tutoriais/tutorial1.md)
+- [Tutorial 2](/tutoriais/tutorial2.md)
