@@ -106,7 +106,7 @@ AcBr3 (176)
 
 
 posicoes aqui já vao estar em termos dos vetores do cristal (crystal):  
-# obs: vamos usar x = -0.614413 e y = -0.699821 para encaixar em (-x,-y,3/4)!  
+obs: vamos usar x = -0.614413 e y = -0.699821 para encaixar em (-x,-y,3/4)!  
 
 
 0.66666667 0.33333333 0.75  
