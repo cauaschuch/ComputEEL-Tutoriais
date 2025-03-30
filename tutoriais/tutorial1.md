@@ -185,6 +185,9 @@ celldm(6) = 0.0150
 
 
 # Apêndice: códigos e arquivos .in  
+OBS: os arquivos .in estão incompletos e não vão rodar - é apenas para facilitar a visualização das células e coordenadas.
+
+
 Código de mudança de base (cartesiana -> vetores do cristal)
 ```python
 import numpy as np  
@@ -205,9 +208,144 @@ for i in range(len(alat)):
     out.write(f'{crystal[i, 0]:11.8f} {crystal[i, 1]:11.8f} {crystal[i, 2]:11.8f}\n')  
 
 out.close()  
-
 ```
 
+
+Ac2CdGe.in
+```txt
+&CONTROL  
+   calculation     = 'scf'  
+/  
+&SYSTEM  
+   ibrav           = 2  
+   celldm(1)       = 15.023321609  
+   nat             = 4  
+   ntyp            = 3  
+/  
+&ELECTRONS  
+/  
+
+ATOMIC_SPECIES  
+Cd  157.25  Gd.pseudo  
+Ge  140.12  Ce.pseudo  
+Ac  227.03  Ac.pseudo  
+
+ATOMIC_POSITIONS crystal  
+Ge 0.00000000  0.00000000  0.00000000  
+Cd 0.50000000  0.50000000  0.50000000  
+Ac 0.75000000  0.75000000  0.75000000  
+Ac 0.25000000  0.25000000  0.25000000  
+  
+K_POINTS automatic  
+4 4 4 0 0 0  
+```
+
+
+AcBrO.in
+```txt
+&CONTROL  
+   calculation     = 'scf'  
+/  
+&SYSTEM  
+   ibrav           = 6  
+   celldm(1)       = 8.1447190108  
+   celldm(3)       = 1.749419953  
+   nat             = 6  
+   ntyp            = 3  
+/  
+&ELECTRONS  
+/  
+
+ATOMIC_SPECIES  
+O    15.999    O.pseudo  
+Br   79.904    Br.pseudo  
+Ac   227.03    Ac.pseudo  
+
+ATOMIC_POSITIONS crystal  
+O   0.0 0.0 0.0  
+O  0.5 0.5 0.0  
+Ac  0.0 0.5 0.83497  
+Ac  0.5 0.0 -0.83497  
+Br  0.5 0.0 0.634694  
+Br  0.0 0.5 -0.634694  
+
+K_POINTS automatic  
+4 4 4 0 0 0  
+```
+
+
+
+AcBr3.in
+```txt
+&CONTROL  
+   calculation     = 'scf'  
+/  
+&SYSTEM  
+   ibrav           = 4  
+   celldm(1)       = 15.439061327  
+   celldm(3) =       0.577723378  
+   nat             = 8  
+   ntyp            = 2  
+/  
+&ELECTRONS  
+/  
+
+ATOMIC_SPECIES  
+Br  79.904 Br.pseudo  
+Ac  227.03  Ac.pseudo  
+
+ATOMIC_POSITIONS crystal  
+Ac   0.66666667 0.33333333 0.75  
+Ac   0.33333333 0.66666667 0.25  
+Br   -0.614413  -0.699821   0.250000  
+Br   0.699821   0.085408   0.250000  
+Br   -0.085408   0.614413   0.250000  
+Br   0.614413   0.699821   0.750000  
+Br   -0.699821  -0.085408   0.750000  
+Br   0.085408  -0.614413   0.750000  
+
+K_POINTS automatic  
+4 4 4 0 0 0  
+```
+
+
+AgPbF6.in
+```txt
+&CONTROL  
+   calculation     = 'scf'  
+/  
+&SYSTEM  
+   ibrav           = 14  
+    celldm(1) = 9.769883361   
+    celldm(2) = 1.0077  
+    celldm(3) = 1.1160  
+    celldm(4) = -0.4190  
+    celldm(5) = -0.4750  
+    celldm(6) = 0.0150  
+   nat             = 8  
+   ntyp            = 3  
+/  
+&ELECTRONS  
+/  
+
+ATOMIC_SPECIES  
+Ag   107.8682   Ag.pseudo  
+Pb   207.2      Pb.pseudo  
+F    18.998403  F.pseudo  
+
+ATOMIC_POSITIONS crystal  
+Ag 0.0 0.0 0.0  
+Pb 0.0 0.5 0.5  
+F 0.857469 0.102946 0.261334  
+F -0.857469 -0.102946 -0.261334  
+F 0.828452 0.244639 0.751039  
+F -0.828452 -0.244639 -0.751039  
+F 0.542902 0.433166 0.271319  
+F -0.542902 -0.433166 -0.271319  
+
+K_POINTS automatic  
+4 4 4 0 0 0  
+```
 
 
 
