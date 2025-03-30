@@ -184,9 +184,9 @@ celldm(6) = 0.0150
             gamma is the angle between axis a and b  
 
 
-# Apêndice: códigos e arquivos .in
+# Apêndice: códigos e arquivos .in  
+Código de mudança de base (cartesiana -> vetores do cristal)
 ```python
-#codigo do exercicio A
 import numpy as np  
 import numpy.linalg as la  
 
