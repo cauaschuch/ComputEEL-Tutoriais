@@ -28,19 +28,22 @@ nav a {
   color: #33ff33;
 }
 
-code {
-  background: #222;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #00ffcc;
-}
-
 pre {
   background: #222;
-  padding: 1em;
+  padding: 1.5em; /* Aumenta o padding para mais espaço interno */
   border-radius: 5px;
   overflow-x: auto;
   color: #eee;
+  font-size: 1.2em; /* Aumenta o tamanho da fonte */
+  line-height: 1.6; /* Melhora a leitura */
+}
+
+code {
+  background: #222;
+  padding: 4px 8px; /* Aumenta o padding para destacar mais */
+  border-radius: 4px;
+  color: #00ffcc;
+  font-size: 1.1em; /* Aumenta um pouco o tamanho da fonte */
 }
 
 h1, h2, h3 {
