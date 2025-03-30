@@ -29,15 +29,13 @@ Em alat:
 0.25 0.75 0.25  
 
 
-os vetores pelo pw.x pra ibrav =  
-2          cubic F (fcc)  
-      v1 = (a/2)(-1,0,1),  v2 = (a/2)(0,1,1), v3 = (a/2)(-1,1,0) ou  
-      
+os vetores pelo pw.x pra ibrav =  2  cubic F (fcc)  
+v1 = (a/2)(-1,0,1),  v2 = (a/2)(0,1,1), v3 = (a/2)(-1,1,0) ou      
 b = .5 * np.array([[-1, 0, 1], [0, 1, 1], [-1, 1, 0]])  # ibrav 2  
 
 
 em alat: (a-lattice) The lattice parameter "alat" is set to alat = celldm(1)  
-as posicoes em crystal, entao:
+as posicoes em crystal, então (código no final da página para fazer a transformação):  
 
  0.00000000  0.00000000  0.00000000  
  0.50000000  0.50000000  0.50000000  
@@ -173,6 +171,7 @@ celldm(6) = 0.0150
              beta is the angle between axis a and c
             gamma is the angle between axis a and b
 ```python
+#codigo do exercicio A
 import numpy as np  
 import numpy.linalg as la  
 
