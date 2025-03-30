@@ -4,50 +4,52 @@ layout: default
 permalink: /tutoriais/tutorial1/
 ---
 
-# Como estruturar as coordenadas atômicas e a célula do seu composto
+# Como estruturar as coordenadas atômicas e a célula do seu composto  
+OBS: Existem 230 grupos espaciais: point group + translational simmetry
 
 
-OBS: Existem 230 grupos espaciais: point group+translational simmetry  $\pi$
-#A  
+# A: Célula cúbica  
 Ac2CdGe (225)  
 4a	Ge	0	0	0  
 4b	Cd	1/2	0	0  
 8c	Ac	1/4	3/4	3/4  
 
-Indo ao site Bilbao Crystallographic Server / WYCKPOS / numero (225) para conseguir as posicoes equivalentes:  
+Indo ao site Bilbao Crystallographic Server / WYCKPOS / num (225) para conseguir as posicoes equivalentes:  
 ```txt
-(0,0,0) + (0,1/2,1/2) + (1/2,0,1/2) + (1/2,1/2,0) +  
-4	a	m-3m   (0,0,0)  
-4	b	m-3m   (1/2,1/2,1/2) #1/2 +0 = 1/2, 1/2 +1/2 = 1 (volta pra 0), 1/2+1/2 = 1 (volta pra 0) imagine uma celula cubica simples, 0,0,0 e 1,0,0 sao equivalentes  
-8	c	-43m     (1/4,1/4,1/4)	(1/4,1/4,3/4) aqui temos que usar tambem,  (0,1/2,1/2)+(1/4,1/4,1/4) == 1/4	3/4	3/4  
+(0,0,0) + (0,1/2,1/2) + (1/2,0,1/2) + (1/2,1/2,0) 
+4	a	m-3m  (0,0,0)  
+4	b	m-3m  (1/2,1/2,1/2)  # aplicar a translação (1/2,1/2,1/2) + (0,1/2,1/2) == 1/2	0	0 que é as coordenadas que batem com os dados  
+8	c	-43m   (1/4,1/4,1/4)	(1/4,1/4,3/4) #aplicar a translação  (0,1/2,1/2)+(1/4,1/4,1/4) == 1/4	3/4	3/4  
 ```
 
-
-em alat (a-lattice) The lattice parameter "alat" is set to alat = celldm(1)  
-  
+Em alat:  
 0.0 0.0 0.0  
 0.5 0.0 0.0  
 0.25 0.75 0.75  
 0.25 0.75 0.25  
 
-os vetores pelo pw.x pra ibrav = 
-2          cubic F (fcc)
-      v1 = (a/2)(-1,0,1),  v2 = (a/2)(0,1,1), v3 = (a/2)(-1,1,0)
-ou
-b = .5 * np.array([[-1, 0, 1], [0, 1, 1], [-1, 1, 0]])  # ibrav 2
 
+os vetores pelo pw.x pra ibrav =  
+2          cubic F (fcc)  
+      v1 = (a/2)(-1,0,1),  v2 = (a/2)(0,1,1), v3 = (a/2)(-1,1,0) ou  
+      
+b = .5 * np.array([[-1, 0, 1], [0, 1, 1], [-1, 1, 0]])  # ibrav 2  
+
+
+em alat: (a-lattice) The lattice parameter "alat" is set to alat = celldm(1)  
 as posicoes em crystal, entao:
 
- 0.00000000  0.00000000  0.00000000
- 0.50000000  0.50000000  0.50000000
- 0.75000000  0.75000000  0.75000000
- 0.25000000  0.25000000  0.25000000
+ 0.00000000  0.00000000  0.00000000  
+ 0.50000000  0.50000000  0.50000000  
+ 0.75000000  0.75000000  0.75000000  
+ 0.25000000  0.25000000  0.25000000  
 
- como é cubico, celldm(1) = X Bohr
- no Materialsp project a unidade é Angstrom
- entao a=b=c=celldm(1) = 7.95 * 1.8897259886 = 15.023321609 Bohr
-##############################
-#B
+ como é cubico, celldm(1) = X Bohr  
+ no Materialsp project a unidade é Angstrom  
+ entao a=b=c=celldm(1) = 7.95 * 1.8897259886 = 15.023321609 Bohr  
+
+
+# B: Célula tetragonal
 
 AcBrO (129)
 2a	O	0	0	0
@@ -84,10 +86,11 @@ existem 2 ibravs para células tetragonais, mas como o nosso é P4/nmm ou primit
       v1=(a/2)(1,-1,c/a),  v2=(a/2)(1,1,c/a),  v3=(a/2)(-1,-1,c/a)
 
 
-celldm(1) = a=b =4.31*1.8897259886 = 8.1447190108 bohr
-celldm(3) = c/a = 4.31/7.54 = 0.571618037# celldm(3) nao tem unidade, é uma proporção
-###########################
-#C
+celldm(1) = a=b =4.31*1.8897259886 = 8.1447190108 bohr  
+celldm(3) = c/a = 4.31/7.54 = 0.571618037# celldm(3) nao tem unidade, é uma proporção  
+
+
+# C: Célula hexagonal
 
 AcBr3 (176)
 
@@ -116,7 +119,7 @@ c  = 4.72 Å*1.8897259886 = 8.9195066661 bohr
 celldm(3) = c/a = 0.577723378
 
 #########################
-#D O DESAFIO FINAL!
+# D: Célula triclínica
 
 AgPbF6 (2) - triclinico 
 1a	Ag	0	0	0
