@@ -72,8 +72,10 @@ ITA number	Setting	P	P-1
 
 
 Então temos:  
+```txt
 2	a	-4m2	(0,0,0)	(1/2,1/2,0)  
 2	c	4mm	    (1/2,0,z)	(0,1/2,-z)  
+```
 
 
 posicoes que ja estao em crystal:  
@@ -109,8 +111,10 @@ AcBr3 (176)
 6h	Br	0.614413	0.699821	3/4  
 
 
+```txt
 2	c	-6..	(1/3,2/3,1/4)	(2/3,1/3,3/4)  
-6	h	m..	(x,y,1/4)	(-y,x-y,1/4)	(-x+y,-x,1/4)	(-x,-y,3/4) (y,-x+y,3/4)	(x-y,x,3/4)  
+6	h	m..	(x,y,1/4)	(-y,x-y,1/4)	(-x+y,-x,1/4)	(-x,-y,3/4) (y,-x+y,3/4)	(x-y,x,3/4)
+```
 
 
 posicoes aqui já vao estar em termos dos vetores do cristal (crystal):  
@@ -149,9 +153,11 @@ AgPbF6 (2) - triclinico
 2i	F	0.542902	0.433166	0.271319  
 
 
+```txt
 1	a	-1	(0,0,0)  
 1	g	-1	(0,1/2,1/2)  
-2	i	1	(x,y,z)	(-x,-y,-z)  
+2	i	1	(x,y,z)	(-x,-y,-z)
+```
 
 
 Assim temos, coordenadas (em crystal):
