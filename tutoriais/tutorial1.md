@@ -45,7 +45,7 @@ as posicoes em crystal, então (código no final da página para fazer a transfo
  como é cubico, celldm(1) = X Bohr  
  no Materialsp project a unidade é Angstrom  
  entao a=b=c=celldm(1) = 7.95 * 1.8897259886 = 15.023321609 Bohr  
-<img src="{{ '\assets\cubic.jpeg' | relative_url }}" alt="cubic" width="300">
+<img src="{{ 'assets\cubic.jpeg' | relative_url }}" alt="cubic" width="300">
 
 
 # B: Célula tetragonal
@@ -92,7 +92,7 @@ existem 2 ibravs para células tetragonais, mas como o nosso é P4/nmm ou primit
 
 celldm(1) = a=b =4.31*1.8897259886 = 8.1447190108 bohr  
 celldm(3) = c/a = 4.31/7.54 = 0.571618037# celldm(3) nao tem unidade, é uma proporção  
-<img src="{{ '\assets\tetragonal.jpeg' | relative_url }}" alt="tetragonal" width="300">
+<img src="{{ 'assets\tetragonal.jpeg' | relative_url }}" alt="tetragonal" width="300">
 
 
 # C: Célula hexagonal
@@ -126,7 +126,7 @@ obs: vamos usar x = -0.614413 e y = -0.699821 para encaixar em (-x,-y,3/4)!
 a = b =  celldm(1) = 8.17 Å*1.8897259886 = 15.439061327   
 c  = 4.72 Å*1.8897259886 = 8.9195066661 bohr  
 celldm(3) = c/a = 0.577723378  
-<img src="{{ '\assets\hexagonal.jpeg' | relative_url }}" alt="hexagonal" width="300">
+<img src="{{ 'assets\hexagonal.jpeg' | relative_url }}" alt="hexagonal" width="300">
 
 
 # D: Célula triclínica  
@@ -185,7 +185,7 @@ celldm(6) = 0.0150
       where alpha is the angle between axis b and c  
              beta is the angle between axis a and c  
             gamma is the angle between axis a and b  
- <img src="{{ '\assets\triclinic.jpeg' | relative_url }}" alt="triclinic" width="300">
+ <img src="{{ 'assets\triclinic.jpeg' | relative_url }}" alt="triclinic" width="300">
 
 
 # Apêndice: códigos e arquivos .in  
