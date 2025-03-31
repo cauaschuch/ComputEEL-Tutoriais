@@ -45,7 +45,7 @@ as posicoes em crystal, então (código no final da página para fazer a transfo
  como é cubico, celldm(1) = X Bohr  
  no Materialsp project a unidade é Angstrom  
  entao a=b=c=celldm(1) = 7.95 * 1.8897259886 = 15.023321609 Bohr  
-<img src="{{ 'assets\cubic.jpeg' | relative_url }}" alt="cubic" width="300">
+<img src="{{ '/assets/cubic.jpeg' | relative_url }}" alt="cubic" width="300">  
 
 
 # B: Célula tetragonal
