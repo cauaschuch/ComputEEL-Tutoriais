@@ -4,7 +4,7 @@ layout: default
 permalink: /tutoriais/tutorial1/
 ---
 
-# Como estruturar as coordenadas atômicas e a célula do seu composto  
+# 1. Como estruturar as coordenadas atômicas e a célula do seu composto  
 OBS: Existem 230 grupos espaciais: point group + translational simmetry
 
 
@@ -372,6 +372,9 @@ F -0.542902 -0.433166 -0.271319
 K_POINTS automatic  
 4 4 4 0 0 0  
 ```
+
+
+# 2. Relaxando a estrutura: exemplo com célula triclínica CsHg
 
 
 
