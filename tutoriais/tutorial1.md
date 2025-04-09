@@ -48,6 +48,8 @@ as posicoes em crystal, então (código no final da página para fazer a transfo
 
 
  Célula primitiva do composto Ac2CdGe 
+
+ 
 <img src="{{ '/assets/cubic.jpeg' | relative_url }}" alt="cubic" width="300">  
 
 
@@ -100,6 +102,8 @@ celldm(3) = c/a = 4.31/7.54 = 0.571618037# celldm(3) nao tem unidade, é uma pro
 
 
  Célula primitiva do composto AcBrO 
+
+ 
 <img src="{{ '/assets/tetragonal.jpeg' | relative_url }}" alt="tetragonal" width="300">
 
 
